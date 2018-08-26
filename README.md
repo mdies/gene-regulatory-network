@@ -26,14 +26,14 @@ whose core consists of a delayed feedback loop, in the following way:
 
 
 P and M being the number of p53 and Mdm2 proteins, respectively. This reaction set is explicited 
-in the input file 'p53\_data.dat' is the input file. It has been structured
+in the input file 'p53\_data.dat'. This file has been structured
 in the following way: 1st column contains the reaction number (that matches the description
 above), 2nd column corresponds to the number of reactants in the reaction (note that if we
 have a generation of one specie, the number here needs to be 1 not 0), 3rd column corresponds
 to the number of products in the reaction (analogous as in the previous case, if we have a degradation
 of one specie, the number here needs to be 1 not 0), 4th and 5th columns contain the reactants
 labels, 6th and 7th columns contain the products labels, and finally columns from 8 to 11
-contain the stochiometric matrix.
+contain the stoichiometric matrix.
 
 
 'constants.dat' contains the reaction rates for each one of the network reactions (in 1/s):
@@ -52,7 +52,8 @@ threshold, and 2nd column contains the cooperativity (Hill exponent).
 
 * Clone this repo to your computer and cd into `gene-regulatory-network` directory.
 * To compile the C code execute `make` (source code has been successfully compiled in 
-Mac OS X 10.11.6 64-bit, it might require linking to math libraries when
+Mac OS X 10.11.6 64-bit and gcc Apple LLVM version 8.0.0 (clang-800.0.38), it might 
+require linking to math libraries when
 compiled in Linux and/or adding `<malloc.h>` at the beginning of anderson\_Model2\_Hurdle.c).
 * To run the program execute: `./execution.sh` (it requires ksh and gnuplot).
 
