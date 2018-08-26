@@ -52,5 +52,4 @@ After execution, the program will create an output file containing the data for 
 molecules of the two simulated species (p53 and Mdm2) over time (out\_p53.dat) and a plot
 for these two time-series (timeseries.pdf).
 
-INCLUDE GRAPH HERE
-![alt text](https://raw.githubusercontent.com/mdies/projectname/branch/path/to/timeseries.png)
+![alt text](https://raw.githubusercontent.com/mdies/gene-regulatory-network/blob/master/timeseries.png)
